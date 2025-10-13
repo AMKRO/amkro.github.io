@@ -1,0 +1,180 @@
+.background {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;           /* behind everything */
+    filter: brightness(0.6); /* dims the background only */
+}
+
+/* Content sits above the background */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#pageTitle {
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: black;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+#difficultyLabel {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+    top: 8px;
+}
+
+input:checked + .slider {
+  background-color: red;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+#guessesDiv {
+    text-align: center;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#remainingGuesses {
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    display: inline;
+    margin: 20px auto;
+    border: 5px solid white;
+}
+
+#guessTheSigmer {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+#enterYourGuess {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#guessBox {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    display: block;
+    margin: 10px auto 10px auto;          /* centers input */
+    padding: 10px auto 10px auto;  /* right padding to account for arrow */
+    width: 250px;               /* fixed width keeps alignment consistent */
+    box-sizing: border-box;     /* includes padding in width */
+}
+
+#submitButton {
+    display: block;
+    margin: 10px auto;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid white;
+}
+
+.correct {
+    background-color: rgb(200, 245, 200);
+    color: rgb(55, 10, 55);
+}
+
+.incorrect {
+    background-color: rgb(250, 220, 220);
+    color: rgb(5, 35, 35);
+}
+
+.up, .down {
+    background-color: rgb(245, 230, 200);
+    color: rgb(10, 25, 55);
+}
+
+#historyContainer h3 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto 10px auto;
+}
+
+#historyContainer table td:first-child {
+    width: 40%;
+    text-align: left;
+}
+
+#historyContainer table td:last-child {
+    width: 60%;
+    text-align: center;
+}

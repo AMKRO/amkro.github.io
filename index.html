@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Sigmerdle</title>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="content">
+        <h1 id="pageTitle">SIGMERDLE</h1>
+        <label class="switch">
+            <input type="checkbox" id="difficultyToggle">
+            <span class="slider"></span>
+        </label>
+        <span id="difficultyLabel">Easy</span>
+        <h3 id="guessTheSigmer">Guess the sigmer</h3>
+        <div id="guessesDiv">
+            <p id="remainingGuesses">5</p>
+            <p id="RG_Title">Guesses Remaining</p>
+        </div>
+
+        <p id="enterYourGuess">Enter your guess</p>
+
+        <form id="guessForm">
+            <input type="text" id="guessBox" name="guessBox" placeholder="Here" list="sigmerNames">
+            <datalist id="sigmerNames"></datalist>
+            <button type="submit" id="submitButton" name="submitButton">Guess</button>
+        </form>
+
+        <div id="feedbackContainer"></div>
+        <div id="historyContainer">
+            <h3 id="previousGuess">Previous guesses</h3>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+    
