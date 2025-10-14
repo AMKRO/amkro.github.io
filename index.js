@@ -163,7 +163,7 @@ toggle.addEventListener('change', function() {
 window.addEventListener('DOMContentLoaded', () => {
     const backgroundCount = 4;
     const randomNum = Math.floor(Math.random() * backgroundCount) + 1;
-    const imagePath = `/Backgrounds/background${randomNum}.jpg`;
+    const imagePath = `Backgrounds/background${randomNum}.jpg`;
     const bg = document.querySelector('.background');
     bg.style.backgroundImage = `url(${imagePath})`;
 });
