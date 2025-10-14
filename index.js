@@ -17,7 +17,7 @@ const sigmers = [
     { name: "Billy", age: 16, residence: "Riddells Creek", hair: "Brown", employment: "Employed", hobby: "Sport"},
     { name: "Connor Wings", age: 17, residence: "Broadmeadows", hair: "Black", employment: "Employed", hobby: "Sport"},
     { name: "Josh", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gaming"},
-   { name: "Cody", age: 17, residence: "Gisborne", hair: "Blonde", employment: "Employed", hobby: "Outside"}
+   { name: "Cody", age: 17, residence: "Gisborne", hair: "Blonde", employment: "Employed", hobby: "Outside"},
 ]
 
 let trueSigmer = sigmers[Math.floor(Math.random()*sigmers.length)]
