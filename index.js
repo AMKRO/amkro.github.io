@@ -1,5 +1,7 @@
 const form = document.getElementById('guessForm')
 const guessHistory = []
+/* Cheater alert weewoo!! */
+/* Have you tried getting to know the "Sigmers" instead of cheating? */
 const sigmers = [
     { name: "Spencer", age: 17, residence: "Sunbury", hair: "Black", employment: "Unemployed", hobby: "Gaming" },
     { name: "Julian", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gaming" },
@@ -175,4 +177,20 @@ toggle.addEventListener('change', function() {
   }
   
   document.getElementById("remainingGuesses").textContent = (guessLimit - totalGuesses);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const backgroundCount = 4;
+    const randomNum = Math.floor(Math.random() * backgroundCount) + 1;
+    const imagePath = `/backgrounds/background${randomNum}.jpg`;
+
+    const bg = document.createElement('div');
+    bg.className = 'background';
+    bg.style.backgroundImage = `url(${imagePath})`;
+
+    document.body.appendChild(bg);
+});
+
+document.getElementById('goto_PN').addEventListener('click', function() {
+    window.location.href = 'patchnotes.html';
 });

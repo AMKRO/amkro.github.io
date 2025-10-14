@@ -5,8 +5,8 @@
         .box {
             width: 50%;
             height: calc(100vh - 200px);
-            background-color: lightblue;
-            border: 2px solid blue;
+            background-color: rgba(240, 121, 97, 0.578);
+            border: 2px solid rgb(255, 42, 0);
             padding: 10px;
             margin: 10px;
         }
@@ -18,11 +18,26 @@
     <title>Document</title>
 </head>
 <body>
+    <button type="submit" id="goBack">Return</button>
+
     <div id="titlePN">
         <h1>Patch Notes</h1>
+        <p id="r4r">Requests for removal should be directed to youknowwho</p>
+
         <div class="box">
-            
+            <h5 id="h5PN_Title">Update v1.2</h5>
+            <div id="pn_1">
+                <ul>
+                    <li>Added 2 new people</li>
+                    <li>Changed Connor from "Unemployed" to "Employed"</li>
+                    <p id="pn_1_welcome">(You're welcome)</p>
+                    <li>Added code comments for CHEATERS!</li>
+                    <li>Made Preston blonde again</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <script src="/patchnotes.js"></script>
 </body>
 </html>
