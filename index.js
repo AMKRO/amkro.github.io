@@ -173,3 +173,4 @@ toggle.addEventListener('change', function() {
   
   document.getElementById("remainingGuesses").textContent = (guessLimit - totalGuesses);
 });
+
