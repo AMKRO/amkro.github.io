@@ -5,7 +5,7 @@ document.getElementById('goBack').addEventListener('click', function() {
 window.addEventListener('DOMContentLoaded', () => {
     const backgroundCount = 4;
     const randomNum = Math.floor(Math.random() * backgroundCount) + 1;
-    const imagePath = `/backgrounds/background${randomNum}.jpg`;
+    const imagePath = `/Backgrounds/background${randomNum}.jpg`;
 
     const bg = document.createElement('div');
     bg.className = 'background';
