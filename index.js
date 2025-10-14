@@ -1,23 +1,23 @@
 const form = document.getElementById('guessForm')
 const guessHistory = []
 const sigmers = [
-    { name: "Spencer", age: 17, residence: "Sunbury", hair: "Black", employment: "Unemployed", hobby: "Gooning" },
-    { name: "Julian", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Fencing" },
-    { name: "Asher", age: 16, residence: "Gisborne", hair: "Brown", employment: "Employed", hobby: "Coles" },
-    { name: "Jackson", age: 16, residence: "Gisborne", hair: "White", employment: "Employed", hobby: "Basketball" },
-    { name: "Christian", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Soccer" },
-    { name: "Cooper", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Gooning" },
-    { name: "Callum", age: 17, residence: "Sunbury", hair: "Blonde", employment: "Unemployed", hobby: "Helldivers 2" },
-    { name: "Joe", age: 17, residence: "Bullengarook", hair: "Brown", employment: "Employed", hobby: "Duolingo" },
-    { name: "David", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Specialist Maths" },
-    { name: "Preston", age: 17, residence: "Sunbury", hair: "Blonde", employment: "Employed", hobby: "Catfishing" },
-    { name: "Henry", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gym"},
-    { name: "Beau", age: 17, residence: "Gisborne", hair: "Brown", employment: "Employed", hobby: "Nonchalant"},
-    { name: "Orlando", age: 17, residence: "Watergardens", hair: "Black", employment: "Employed", hobby: "Rust"},
-    { name: "Billy", age: 16, residence: "Riddells Creek", hair: "Brown", employment: "Employed", hobby: "Little boys"},
-    { name: "Connor Wings", age: 17, residence: "Broadmeadows", hair: "Black", employment: "Employed", hobby: "Basketball"},
-    { name: "Josh", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Marvel Rivals"},
-   
+    { name: "Spencer", age: 17, residence: "Sunbury", hair: "Black", employment: "Unemployed", hobby: "Gaming" },
+    { name: "Julian", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gaming" },
+    { name: "Asher", age: 16, residence: "Gisborne", hair: "Brown", employment: "Employed", hobby: "Outside" },
+    { name: "Jackson", age: 16, residence: "Gisborne", hair: "White", employment: "Employed", hobby: "Sport" },
+    { name: "Christian", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Sport" },
+    { name: "Cooper", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Gaming" },
+    { name: "Callum", age: 17, residence: "Sunbury", hair: "Blonde", employment: "Unemployed", hobby: "Gaming" },
+    { name: "Joe", age: 17, residence: "Bullengarook", hair: "Brown", employment: "Employed", hobby: "Outside" },
+    { name: "David", age: 17, residence: "Sunbury", hair: "Brown", employment: "Unemployed", hobby: "Gaming" },
+    { name: "Preston", age: 17, residence: "Sunbury", hair: "Blonde", employment: "Employed", hobby: "Gaming" },
+    { name: "Henry", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Outside"},
+    { name: "Beau", age: 17, residence: "Gisborne", hair: "Brown", employment: "Employed", hobby: "Sport"},
+    { name: "Orlando", age: 17, residence: "Watergardens", hair: "Black", employment: "Employed", hobby: "Gaming"},
+    { name: "Billy", age: 16, residence: "Riddells Creek", hair: "Brown", employment: "Employed", hobby: "Sport"},
+    { name: "Connor Wings", age: 17, residence: "Broadmeadows", hair: "Black", employment: "Employed", hobby: "Sport"},
+    { name: "Josh", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gaming"},
+   { name: "Cody", age: 17, residence: "Gisborne", hair: "Blonde"}
 ]
 
 let trueSigmer = sigmers[Math.floor(Math.random()*sigmers.length)]
