@@ -17,7 +17,8 @@ const sigmers = [
     { name: "Billy", age: 16, residence: "Riddells Creek", hair: "Brown", employment: "Employed", hobby: "Sport"},
     { name: "Connor Wings", age: 17, residence: "Broadmeadows", hair: "Black", employment: "Employed", hobby: "Sport"},
     { name: "Josh", age: 17, residence: "Sunbury", hair: "Brown", employment: "Employed", hobby: "Gaming"},
-   { name: "Cody", age: 17, residence: "Gisborne", hair: "Blonde", employment: "Employed", hobby: "Outside"},
+    { name: "Cody", age: 17, residence: "Gisborne", hair: "Blonde", employment: "Employed", hobby: "Outside"},
+    { name: "Aiden", age: 17, residence: "Sunbury", hair: "Black", employment: "Unemployed", hobby: "Nothing. Literally nothing."}
 ]
 
 let trueSigmer = sigmers[Math.floor(Math.random()*sigmers.length)]
@@ -58,6 +59,7 @@ function displayFeedback(feedback) {
     table.border = 1;
 
     for (let key in feedback) {
+        // Skip age and hair if hard mode is on
         if (toggle.checked && (key === "age" || key === "hair")) continue;
 
         const row = table.insertRow();
@@ -91,6 +93,7 @@ function displayHistory() {
         table.appendChild(caption);
 
         for (let key in item.result) {
+            // Skip age and hair if hard mode is on
             if (toggle.checked && (key === "age" || key === "hair")) continue;
 
             const row = table.insertRow();
@@ -173,4 +176,3 @@ toggle.addEventListener('change', function() {
   
   document.getElementById("remainingGuesses").textContent = (guessLimit - totalGuesses);
 });
-
